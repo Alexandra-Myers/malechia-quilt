@@ -1,0 +1,40 @@
+{
+  "type": "nbtcrafting:smithing",
+  "base": {
+    "item": "minecraft:netherite_axe"
+  },
+  "ingredient": {
+    "item": "malechia:malechia_block"
+  },
+  "result": {
+    "item": "malechia:malechia_axe",
+    "data": {
+      "display": {
+        "Name": "{\"translate\": \"item.malechia.enhanced_malechia_axe\", \"italic\": \"false\"}"
+      },
+      "CustomModelData": 1,
+      "Enchantments": [
+        {
+          "id": "minecraft:sharpness",
+          "lvl": 10
+        },
+        {
+          "id": "minecraft:efficiency",
+          "lvl": 10
+        },
+        {
+          "id": "malechia:heros_edge",
+          "lvl": 1
+        },
+        {
+          "id": "minecraft:unbreaking",
+          "lvl": 10
+        },
+        {
+          "id": "minecraft:mending",
+          "lvl": 1
+        }
+      ]
+    }
+  }
+}

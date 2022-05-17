@@ -1,0 +1,43 @@
+{
+  "type": "nbtcrafting:smithing",
+  "base": {
+    "item": "minecraft:netherite_helmet"
+  },
+  "ingredient": {
+    "item": "malechia:malechia_block"
+  },
+  "result": {
+    "item": "malechia:malechia_helmet",
+    "data": {
+      "display": {
+        "Name": "{\"translate\": \"item.malechia.enhanced_malechia_helmet\", \"italic\": \"false\"}"
+      },
+      "Enchantments": [
+        {
+          "id": "minecraft:protection",
+          "lvl": 5
+        },
+        {
+          "id": "minecraft:thorns",
+          "lvl": 5
+        },
+        {
+          "id": "minecraft:respiration",
+          "lvl": 5
+        },
+        {
+          "id": "minecraft:aqua_affinity",
+          "lvl": 3
+        },
+        {
+          "id": "minecraft:unbreaking",
+          "lvl": 10
+        },
+        {
+          "id": "minecraft:mending",
+          "lvl": 1
+        }
+      ]
+    }
+  }
+}

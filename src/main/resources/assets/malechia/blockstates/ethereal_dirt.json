@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "malechia:block/ethereal_dirt"
+      },
+      {
+        "model": "malechia:block/ethereal_dirt",
+        "y": 90
+      },
+      {
+        "model": "malechia:block/ethereal_dirt",
+        "y": 180
+      },
+      {
+        "model": "malechia:block/ethereal_dirt",
+        "y": 270
+      }
+    ]
+  }
+}

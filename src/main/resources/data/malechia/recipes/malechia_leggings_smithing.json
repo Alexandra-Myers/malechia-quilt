@@ -1,0 +1,35 @@
+{
+  "type": "nbtcrafting:smithing",
+  "base": {
+    "item": "minecraft:netherite_leggings"
+  },
+  "ingredient": {
+    "item": "malechia:malechia_block"
+  },
+  "result": {
+    "item": "malechia:malechia_leggings",
+    "data": {
+      "display": {
+        "Name": "{\"translate\": \"item.malechia.enhanced_malechia_leggings\", \"italic\": \"false\"}"
+      },
+      "Enchantments": [
+        {
+          "id": "minecraft:protection",
+          "lvl": 5
+        },
+        {
+          "id": "minecraft:thorns",
+          "lvl": 5
+        },
+        {
+          "id": "minecraft:unbreaking",
+          "lvl": 10
+        },
+        {
+          "id": "minecraft:mending",
+          "lvl": 1
+        }
+      ]
+    }
+  }
+}

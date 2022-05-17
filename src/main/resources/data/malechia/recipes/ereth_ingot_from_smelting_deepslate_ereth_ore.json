@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "ereth_ingot",
+  "ingredient": {
+    "item": "malechia:deepslate_ereth_ore"
+  },
+  "result": "malechia:ereth_ingot",
+  "experience": 3.0,
+  "cookingtime": 400
+}

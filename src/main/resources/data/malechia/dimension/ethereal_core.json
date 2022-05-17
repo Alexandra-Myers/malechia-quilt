@@ -1,0 +1,25 @@
+{
+  "type": "malechia:ethereal_core",
+  "generator": {
+    "type": "minecraft:noise",
+    "seed": 0,
+    "settings": "malechia:ethereal_noise",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "minecraft:the_end",
+          "parameters": {
+            "temperature": 0.6,
+            "humidity": 0.6,
+            "continentalness": 1,
+            "erosion": 0.3,
+            "weirdness": 0.9,
+            "depth": 0.3,
+            "offset": 0.2
+          }
+        }
+      ]
+    }
+  }
+}

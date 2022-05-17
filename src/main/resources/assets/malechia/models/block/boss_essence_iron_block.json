@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "malechia:block/boss_essence_iron_block"
+  }
+}

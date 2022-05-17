@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "litrium_ingot",
+  "ingredient": {
+    "item": "malechia:litrium_dust"
+  },
+  "result": "malechia:litrium_ingot",
+  "experience": 3.0,
+  "cookingtime": 400
+}

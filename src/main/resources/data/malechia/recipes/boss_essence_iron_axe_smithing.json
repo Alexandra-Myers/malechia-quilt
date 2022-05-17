@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:iron_axe"
+  },
+  "addition": {
+    "item": "malechia:boss_essence"
+  },
+  "result": {
+    "item": "malechia:boss_essence_iron_axe"
+  }
+}

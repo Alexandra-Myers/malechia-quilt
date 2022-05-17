@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "malechia:item/boss_essence_iron_pickaxe"
+  }
+}

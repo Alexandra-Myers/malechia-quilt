@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "malechia:ethereal_log",
+    "malechia:ethereal_wood",
+    "malechia:ethereal_planks",
+    "malechia:stripped_ethereal_log",
+    "malechia:stripped_ethereal_wood",
+    "malechia:fiery_ethereal_log",
+    "malechia:fiery_ethereal_wood",
+    "malechia:fiery_ethereal_planks",
+    "malechia:stripped_fiery_ethereal_log",
+    "malechia:stripped_fiery_ethereal_wood",
+    "malechia:infinity_ethereal_log",
+    "malechia:infinity_ethereal_wood",
+    "malechia:infinity_ethereal_planks",
+    "malechia:stripped_infinity_ethereal_log",
+    "malechia:stripped_infinity_ethereal_wood"
+  ]
+}

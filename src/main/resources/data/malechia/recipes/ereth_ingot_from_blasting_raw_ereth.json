@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "group": "ereth_ingot",
+  "ingredient": {
+    "item": "malechia:raw_ereth"
+  },
+  "result": "malechia:ereth_ingot",
+  "experience": 3.0,
+  "cookingtime": 200
+}

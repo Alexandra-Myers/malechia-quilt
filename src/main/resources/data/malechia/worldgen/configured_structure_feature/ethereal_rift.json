@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:village",
+
+  "config": {
+    "start_pool": "malechia:ethereal_rift/start_pool",
+    "size": 2
+  },
+  "biomes": "#malechia:has_structure/ethereal_rift",
+  "adapt_noise": true,
+  "spawn_overrides": {
+  }
+}

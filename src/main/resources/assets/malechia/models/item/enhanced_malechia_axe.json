@@ -1,0 +1,6 @@
+{
+  "parent": "malechia:item/malechia_axe",
+  "textures": {
+    "layer0": "malechia:item/enhanced_malechia_axe"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "malechia_ingot",
+  "ingredients": [
+    {
+      "item": "malechia:malechia_block"
+    }
+  ],
+  "result": {
+    "item": "malechia:malechia_ingot",
+    "count": 8
+  }
+}

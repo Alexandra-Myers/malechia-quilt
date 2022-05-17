@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#?#",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "malechia:allian_ingot"
+    },
+    "?": {
+      "item": "malechia:boss_essence_nether_star"
+    }
+  },
+  "result": {
+    "item": "malechia:unifier"
+  }
+}

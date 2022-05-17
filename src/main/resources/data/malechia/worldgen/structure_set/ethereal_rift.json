@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "malechia:ethereal_rift",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 953274248,
+    "spacing": 40,
+    "separation": 20,
+    "type": "minecraft:random_spread"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "malechia:block/template_ethereal_bush",
+  "textures": {
+    "top": "malechia:block/ethereal_bush_top",
+    "side": "malechia:block/ethereal_bush_side"
+  }
+}

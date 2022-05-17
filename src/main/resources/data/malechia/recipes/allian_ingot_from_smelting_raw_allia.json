@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "allian_ingot",
+  "ingredient": {
+    "item": "malechia:raw_allia"
+  },
+  "result": "malechia:allian_ingot",
+  "experience": 3.0,
+  "cookingtime": 400
+}

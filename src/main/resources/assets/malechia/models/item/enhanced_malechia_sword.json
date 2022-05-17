@@ -1,0 +1,6 @@
+{
+  "parent": "malechia:item/malechia_sword",
+  "textures": {
+    "layer0": "malechia:item/enhanced_malechia_sword"
+  }
+}

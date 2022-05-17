@@ -1,0 +1,48 @@
+{
+  "type": "nbtcrafting:smithing",
+  "base": {
+    "item": "minecraft:netherite_sword"
+  },
+  "ingredient": {
+    "item": "malechia:malechia_block"
+  },
+  "result": {
+    "item": "malechia:malechia_sword",
+    "data": {
+      "display": {
+        "Name": "{\"translate\": \"item.malechia.enhanced_malechia_sword\", \"italic\": \"false\"}"
+      },
+      "CustomModelData": 1,
+      "Enchantments": [
+        {
+          "id": "minecraft:sharpness",
+          "lvl": 10
+        },
+        {
+          "id": "minecraft:sweeping",
+          "lvl": 5
+        },
+        {
+          "id": "malechia:heros_edge",
+          "lvl": 1
+        },
+        {
+          "id": "minecraft:looting",
+          "lvl": 5
+        },
+        {
+          "id": "minecraft:unbreaking",
+          "lvl": 10
+        },
+        {
+          "id": "minecraft:fire_aspect",
+          "lvl": 2
+        },
+        {
+          "id": "minecraft:mending",
+          "lvl": 1
+        }
+      ]
+    }
+  }
+}

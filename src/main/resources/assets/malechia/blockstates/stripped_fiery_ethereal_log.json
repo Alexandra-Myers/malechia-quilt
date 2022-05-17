@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "malechia:block/stripped_fiery_ethereal_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "malechia:block/stripped_fiery_ethereal_log"
+    },
+    "axis=z": {
+      "model": "malechia:block/stripped_fiery_ethereal_log",
+      "x": 90
+    }
+  }
+}

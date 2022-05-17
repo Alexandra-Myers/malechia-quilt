@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XX",
+    " #",
+    " #"
+  ],
+  "key": {
+    "#": {
+      "item": "malechia:boss_essence_iron_ingot"
+    },
+    "X": {
+      "item": "malechia:malechia_ingot"
+    }
+  },
+  "result": {
+    "item": "malechia:malechia_hoe"
+  }
+}

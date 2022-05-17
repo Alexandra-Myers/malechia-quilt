@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "malechia:block/ethereal_log",
+    "side": "malechia:block/ethereal_log"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "malechia:item/malechia_axe"
+  },
+  "overrides": [
+    { "predicate": { "custom_model_data": 1}, "model": "malechia:item/enhanced_malechia_axe"}
+  ]
+}

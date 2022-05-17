@@ -1,0 +1,6 @@
+{
+  "parent": "malechia:item/malechia_bow",
+  "textures": {
+    "layer0": "malechia:item/malechia_bow_pulling_0"
+  }
+}

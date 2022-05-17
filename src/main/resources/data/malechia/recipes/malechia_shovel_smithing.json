@@ -1,0 +1,36 @@
+{
+  "type": "nbtcrafting:smithing",
+  "base": {
+    "item": "minecraft:netherite_shovel"
+  },
+  "ingredient": {
+    "item": "malechia:malechia_block"
+  },
+  "result": {
+    "item": "malechia:malechia_shovel",
+    "data": {
+      "display": {
+        "Name": "{\"translate\": \"item.malechia.enhanced_malechia_shovel\", \"italic\": \"false\"}"
+      },
+      "CustomModelData": 1,
+      "Enchantments": [
+        {
+          "id": "minecraft:efficiency",
+          "lvl": 10
+        },
+        {
+          "id": "minecraft:fortune",
+          "lvl": 5
+        },
+        {
+          "id": "minecraft:unbreaking",
+          "lvl": 10
+        },
+        {
+          "id": "minecraft:mending",
+          "lvl": 1
+        }
+      ]
+    }
+  }
+}

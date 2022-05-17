@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "malechia:block/stripped_ethereal_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "malechia:block/stripped_ethereal_wood"
+    },
+    "axis=z": {
+      "model": "malechia:block/stripped_ethereal_wood",
+      "x": 90
+    }
+  }
+}

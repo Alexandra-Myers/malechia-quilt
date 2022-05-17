@@ -1,0 +1,36 @@
+{
+  "type": "nbtcrafting:smithing",
+  "base": {
+    "item": "minecraft:bow"
+  },
+  "ingredient": {
+    "item": "malechia:malechia_block"
+  },
+  "result": {
+    "item": "malechia:malechia_bow",
+    "data": {
+      "display": {
+        "Name": "{\"translate\": \"item.malechia.enhanced_malechia_bow\", \"italic\": \"false\"}"
+      },
+      "CustomModelData": 1,
+      "Enchantments": [
+        {
+          "id": "minecraft:power",
+          "lvl": 10
+        },
+        {
+          "id": "minecraft:punch",
+          "lvl": 5
+        },
+        {
+          "id": "minecraft:unbreaking",
+          "lvl": 10
+        },
+        {
+          "id": "minecraft:flame",
+          "lvl": 2
+        }
+      ]
+    }
+  }
+}

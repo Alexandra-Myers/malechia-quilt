@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_mirrored",
+  "textures": {
+    "end": "malechia:block/ethereal_stone_top",
+    "side": "malechia:block/ethereal_stone"
+  }
+}

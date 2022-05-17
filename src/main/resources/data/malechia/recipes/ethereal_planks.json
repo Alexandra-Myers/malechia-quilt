@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "malechia:ethereal_logs"
+    }
+  ],
+  "result": {
+    "item": "malechia:ethereal_planks",
+    "count": 4
+  }
+}

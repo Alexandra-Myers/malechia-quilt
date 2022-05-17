@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "malechia:ethereal_stone"
+    },
+    "title": {
+      "translate": "advancements.the_core.root.title"
+    },
+    "description": {
+      "translate": "advancements.the_core.root.description"
+    },
+    "background": "malechia:textures/gui/advancements/backgrounds/the_core.png",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "minecraft:overworld",
+        "to": "malechia:ethereal_core"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "requirement"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "malechia:malechia_ingot",
+      "malechia:combiner",
+      "malechia:unifier"
+    ]
+  }
+}

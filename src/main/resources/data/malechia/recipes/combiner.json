@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#@#",
+    ";?;",
+    "#!#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:emerald"
+    },
+    "@": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "!": {
+      "item": "minecraft:copper_ingot"
+    },
+    ";": {
+      "item": "minecraft:diamond"
+    },
+    "?": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "item": "malechia:combiner"
+  }
+}

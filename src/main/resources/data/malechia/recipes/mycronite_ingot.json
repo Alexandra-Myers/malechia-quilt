@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "malechia:quarite"
+    },
+    {
+      "item": "malechia:quarite"
+    },
+    {
+      "item": "malechia:quarite"
+    },
+    {
+      "item": "malechia:quarite"
+    },
+    {
+      "item": "malechia:mycronium_orb"
+    },
+    {
+      "item": "malechia:mycronium_orb"
+    },
+    {
+      "item": "malechia:mycronium_orb"
+    },
+    {
+      "item": "malechia:mycronium_orb"
+    },
+    {
+      "item": "malechia:unifier"
+    }
+  ],
+  "result": {
+    "item": "malechia:mycronite_ingot",
+    "count": 4
+  }
+}

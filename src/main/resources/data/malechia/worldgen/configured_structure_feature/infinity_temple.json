@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:village",
+
+  "config": {
+    "start_pool": "malechia:infinity_temple/start_pool",
+    "size": 2
+  },
+  "biomes": "#malechia:has_structure/infinity_temple",
+  "adapt_noise": true,
+  "spawn_overrides": {
+  }
+}

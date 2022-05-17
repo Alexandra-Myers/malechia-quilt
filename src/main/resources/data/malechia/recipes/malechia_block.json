@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#?#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "malechia:malechia_ingot"
+    },
+    "?": {
+      "item": "malechia:unifier"
+    }
+  },
+  "result": {
+    "item": "malechia:malechia_block"
+  }
+}

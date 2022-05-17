@@ -1,0 +1,32 @@
+{
+  "type": "nbtcrafting:smithing",
+  "base": {
+    "item": "malechia:netherite_shield"
+  },
+  "ingredient": {
+    "item": "malechia:malechia_block"
+  },
+  "result": {
+    "item": "malechia:malechia_shield",
+    "data": {
+      "Enchantments": [
+        {
+          "id": "minecraft:unbreaking",
+          "lvl": 10
+        },
+        {
+          "id": "minecraft:protection",
+          "lvl": 10
+        },
+        {
+          "id": "malechia:protect",
+          "lvl": 1
+        },
+        {
+          "id": "minecraft:mending",
+          "lvl": 5
+        }
+      ]
+    }
+  }
+}

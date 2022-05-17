@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "malechia_ingot",
+  "pattern": [
+    "#@!",
+    ";?%",
+    "^&*"
+  ],
+  "key": {
+    "#": {
+      "item": "malechia:mycronite_ingot"
+    },
+    "@": {
+      "item": "malechia:auraum_crystal"
+    },
+    "!": {
+      "item": "malechia:locronite_ingot"
+    },
+    ";": {
+      "item": "malechia:ereth_ingot"
+    },
+    "?": {
+      "item": "malechia:combiner"
+    },
+    "%": {
+      "item": "malechia:chryon"
+    },
+    "^": {
+      "item": "malechia:halotic_ingot"
+    },
+    "&": {
+      "item": "malechia:litrium_ingot"
+    },
+    "*": {
+      "item": "malechia:allian_ingot"
+    }
+  },
+  "result": {
+    "item": "malechia:malechia_ingot"
+  }
+}

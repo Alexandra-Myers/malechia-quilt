@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.alexandra.malechia.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "PlayerEntityMixin",
+    "ComposterBlockMixin"
+  ],
+  "client": [
+    "MalechiaMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

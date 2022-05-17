@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "boss_essence_iron_ingot",
+  "ingredients": [
+    {
+      "item": "malechia:boss_essence_iron_block"
+    }
+  ],
+  "result": {
+    "item": "malechia:boss_essence_iron_ingot",
+    "count": 9
+  }
+}

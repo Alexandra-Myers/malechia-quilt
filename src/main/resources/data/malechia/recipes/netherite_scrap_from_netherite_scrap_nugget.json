@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "malechia:netherite_scrap_nugget"
+    },
+    {
+      "item": "malechia:netherite_scrap_nugget"
+    },
+    {
+      "item": "malechia:netherite_scrap_nugget"
+    },
+    {
+      "item": "malechia:netherite_scrap_nugget"
+    }
+  ],
+  "result": {
+    "item": "minecraft:netherite_scrap"
+  }
+}

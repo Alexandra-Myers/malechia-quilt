@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "malechia:alotic_crystal"
+    },
+    {
+      "item": "malechia:alotic_crystal"
+    },
+    {
+      "item": "malechia:alotic_crystal"
+    },
+    {
+      "item": "malechia:alotic_crystal"
+    },
+    {
+      "item": "malechia:halorium"
+    },
+    {
+      "item": "malechia:halorium"
+    },
+    {
+      "item": "malechia:halorium"
+    },
+    {
+      "item": "malechia:halorium"
+    },
+    {
+      "item": "malechia:unifier"
+    }
+  ],
+  "result": {
+    "item": "malechia:halotic_ingot",
+    "count": 4
+  }
+}

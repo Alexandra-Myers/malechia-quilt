@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "malechia:infinity_temple",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 953405486,
+    "spacing": 40,
+    "separation": 20,
+    "type": "minecraft:random_spread"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "parent": "fabricshieldlib:item/fabric_shield_blocking",
+  "textures":{
+    "shield":"malechia:item/netherite_shield"
+  }
+}
+public PlayerEntity(World world, BlockPos pos, float yaw, GameProfile profile) {
+super(EntityType.PLAYER, world);
+this.selectedItem = ItemStack.EMPTY;
+this.itemCooldownManager = this.createCooldownManager();
+this.setUuid(getUuidFromProfile(profile));
+this.gameProfile = profile;
+this.playerScreenHandler = new PlayerScreenHandler(this.inventory, !world.isClient, this);
+this.currentScreenHandler = this.playerScreenHandler;
+this.refreshPositionAndAngles((double)pos.getX() + 0.5D, (double)(pos.getY() + 1), (double)pos.getZ() + 0.5D, yaw, 0.0F);
+this.field_6215 = 180.0F;
+}

@@ -7,16 +7,16 @@ import net.alexandra.malechia.item.ModItems;
 import net.alexandra.malechia.tag.MalechiaBlockTags;
 import net.alexandra.malechia.util.ModLootTableModifiers;
 import net.alexandra.malechia.util.ModRegistries;
-import net.alexandra.malechia.world.biome.MalechiaBiomeKeys;
 import net.alexandra.malechia.world.biome.MalechiaBuiltinBiomes;
 import net.alexandra.malechia.world.biome.MalechiaSurfaceRules;
 import net.alexandra.malechia.world.feature.ModConfiguredFeatures;
 import net.alexandra.malechia.world.feature.ModTreeConfiguredFeatures;
 import net.alexandra.malechia.world.gen.ModWorldGen;
-import net.fabricmc.api.ModInitializer;
 import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
 import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
+import org.quiltmc.loader.api.ModContainer;
+import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -28,16 +28,16 @@ public class MalechiaMod implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger("Malechia");
 
 	@Override
-	public void onInitialize() {
+	public void onInitialize(ModContainer mod) {
 		ModTreeConfiguredFeatures.registerConfiguredFeatures();
 		CustomPortalBuilder.beginPortal()
-			.frameBlock(ModBlocks.PURE_ETHEREAL_CRYSTAL_BLOCK)
-			.flatPortal()
-			.onlyLightInOverworld()
-			.lightWithItem(Items.DRAGON_BREATH)
-			.destDimID(new Identifier("malechia:ethereal_core"))
-			.tintColor(0, 197, 255)
-			.registerPortal();
+				.frameBlock(ModBlocks.PURE_ETHEREAL_CRYSTAL_BLOCK)
+				.flatPortal()
+				.onlyLightInOverworld()
+				.lightWithItem(Items.DRAGON_BREATH)
+				.destDimID(new Identifier("malechia:ethereal_core"))
+				.tintColor(0, 197, 255)
+				.registerPortal();
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.

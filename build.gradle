@@ -35,16 +35,34 @@ dependencies {
 		// officialMojangMappings() // Uncomment if you want to use Mojang mappings as your primary mappings, falling back on QM for parameters and Javadocs
 	}
 	modImplementation libs.quilt.loader
-	modImplementation libs.malechia.lib
-	modImplementation libs.fabric.shield.lib
-	modImplementation libs.customportalapi
-	include libs.customportalapi
-	modImplementation libs.terrablender
+	modImplementation(libs.malechia.lib) {
+		exclude group: 'net.fabricmc'
+		exclude group: 'net.fabricmc.fabric-api'
+	}
+	modImplementation(libs.fabric.shield.lib) {
+		exclude group: 'net.fabricmc'
+		exclude group: 'net.fabricmc.fabric-api'
+	}
+	modImplementation(libs.customportalapi) {
+		exclude group: 'net.fabricmc'
+		exclude group: 'net.fabricmc.fabric-api'
+	}
+	include(libs.customportalapi) {
+		exclude group: 'net.fabricmc'
+		exclude group: 'net.fabricmc.fabric-api'
+	}
+	modImplementation(libs.terrablender) {
+		exclude group: 'net.fabricmc'
+		exclude group: 'net.fabricmc.fabric-api'
+	}
 
 	// QSL is not a complete API; You will need Quilted Fabric API to fill in the gaps.
 	// Quilted Fabric API will automatically pull in the correct QSL version.
 	modImplementation libs.quilted.fabric.api
-	modImplementation libs.nbtcrafting
+	modImplementation(libs.nbtcrafting) {
+		exclude group: 'net.fabricmc'
+		exclude group: 'net.fabricmc.fabric-api'
+	}
 }
 
 processResources {

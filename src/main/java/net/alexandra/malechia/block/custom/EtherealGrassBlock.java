@@ -24,6 +24,7 @@ extends Block
 implements Fertilizable {
     public EtherealGrassBlock(AbstractBlock.Settings settings) {
         super(settings);
+		setDefaultState(this.getStateManager().getDefaultState());
     }
 
     private static boolean stayAlive(BlockState state, WorldView world, BlockPos pos) {

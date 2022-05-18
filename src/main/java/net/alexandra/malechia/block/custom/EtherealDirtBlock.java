@@ -18,6 +18,7 @@ extends Block
 implements Fertilizable {
     public EtherealDirtBlock(AbstractBlock.Settings settings) {
         super(settings);
+		setDefaultState(this.getStateManager().getDefaultState());
     }
 
     @Override

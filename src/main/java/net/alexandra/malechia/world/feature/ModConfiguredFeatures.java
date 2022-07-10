@@ -2,6 +2,9 @@ package net.alexandra.malechia.world.feature;
 
 import net.alexandra.malechia.MalechiaMod;
 import net.alexandra.malechia.block.ModBlocks;
+import net.minecraft.block.Blocks;
+import net.minecraft.structure.rule.BlockMatchRuleTest;
+import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.util.Holder;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.util.ConfiguredFeatureUtil;
@@ -11,6 +14,7 @@ import java.util.List;
 import static net.minecraft.world.gen.feature.OreConfiguredFeatures.*;
 
 public class ModConfiguredFeatures {
+	public static final RuleTest END_STONE = new BlockMatchRuleTest(Blocks.END_STONE);
     public static final List<OreFeatureConfig.Target> ALLIAN_ORES;
     public static final List<OreFeatureConfig.Target> ALOTIC_ORES;
     public static final List<OreFeatureConfig.Target> AURAUM_ORES;
@@ -32,7 +36,7 @@ public class ModConfiguredFeatures {
     public static final Holder<ConfiguredFeature<OreFeatureConfig, ?>> MYCRONIUM_ORE;
     public static final Holder<ConfiguredFeature<OreFeatureConfig, ?>> QUARITE_ORE;
     static{
-        ALLIAN_ORES = List.of(OreFeatureConfig.createTarget(STONE_ORE_REPLACEABLES, ModBlocks.ALLIAN_ORE.getDefaultState()), OreFeatureConfig.createTarget(DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_ALLIAN_ORE.getDefaultState()));
+        ALLIAN_ORES = List.of(OreFeatureConfig.createTarget(END_STONE, ModBlocks.ALLIAN_ORE.getDefaultState()));
         ALLIAN_ORE = ConfiguredFeatureUtil.register( "ore_allian", Feature.ORE, new OreFeatureConfig(ALLIAN_ORES, 6, 0.6F));
 
         ALOTIC_ORES = List.of(OreFeatureConfig.createTarget(STONE_ORE_REPLACEABLES, ModBlocks.ALOTIC_ORE.getDefaultState()), OreFeatureConfig.createTarget(DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_ALOTIC_ORE.getDefaultState()));

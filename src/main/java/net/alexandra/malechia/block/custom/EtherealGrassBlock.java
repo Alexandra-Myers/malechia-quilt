@@ -11,6 +11,7 @@ import net.minecraft.block.Fertilizable;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
+import net.minecraft.util.random.RandomGenerator;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
@@ -20,8 +21,8 @@ import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.NetherConfiguredFeatures;
 import net.minecraft.world.gen.feature.VegetationPlacedFeatures;
 
-public class NyliumBlock extends Block implements Fertilizable {
-	public NyliumBlock(AbstractBlock.Settings settings) {
+public class EtherealGrassBlock extends Block implements Fertilizable {
+	public EtherealGrassBlock(AbstractBlock.Settings settings) {
 		super(settings);
 	}
 
@@ -33,11 +34,10 @@ public class NyliumBlock extends Block implements Fertilizable {
 	}
 
 	@Override
-	public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+	public void randomTick(BlockState state, ServerWorld world, BlockPos pos, RandomGenerator random) {
 		if (!stayAlive(state, world, pos)) {
-			world.setBlockState(pos, Blocks.NETHERRACK.getDefaultState());
+			world.setBlockState(pos, ModBlocks.ETHEREAL_DIRT.getDefaultState());
 		}
-
 	}
 
 	@Override
@@ -46,24 +46,14 @@ public class NyliumBlock extends Block implements Fertilizable {
 	}
 
 	@Override
-	public boolean canGrow(World world, Random random, BlockPos pos, BlockState state) {
+	public boolean canGrow(World world, RandomGenerator random, BlockPos pos, BlockState state) {
 		return true;
 	}
 
 	@Override
-	public void grow(ServerWorld world, Random random, BlockPos pos, BlockState state) {
+	public void grow(ServerWorld world, RandomGenerator random, BlockPos pos, BlockState state) {
 		BlockState blockState = world.getBlockState(pos);
 		BlockPos blockPos = pos.up();
 		ChunkGenerator chunkGenerator = world.getChunkManager().getChunkGenerator();
-		if (blockState.isOf(Blocks.CRIMSON_NYLIUM)) {
-			((ConfiguredFeature)NetherConfiguredFeatures.CRIMSON_FOREST_VEGETATION_BONEMEAL.value()).generate(world, chunkGenerator, random, blockPos);
-		} else if (blockState.isOf(Blocks.WARPED_NYLIUM)) {
-			((ConfiguredFeature)NetherConfiguredFeatures.WARPED_FOREST_VEGETATION_BONEMEAL.value()).generate(world, chunkGenerator, random, blockPos);
-			((ConfiguredFeature)NetherConfiguredFeatures.NETHER_SPROUTS_BONEMEAL.value()).generate(world, chunkGenerator, random, blockPos);
-			if (random.nextInt(8) == 0) {
-				((ConfiguredFeature)NetherConfiguredFeatures.TWISTING_VINES_BONEMEAL.value()).generate(world, chunkGenerator, random, blockPos);
-			}
-		}
-
 	}
 }

@@ -1,6 +1,7 @@
 package net.alexandra.malechia.item.custom;
 
 import net.alexandra.malechia.effects.ModEffects;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -21,7 +22,7 @@ import net.minecraft.item.Items;
 public class BOSS_ESSENCE extends Item {
     private static final int MAX_USE_TIME = 40;
 
-    public BOSS_ESSENCE(Settings settings) {
+    public BOSS_ESSENCE(FabricItemSettings settings) {
         super(settings);
     }
 

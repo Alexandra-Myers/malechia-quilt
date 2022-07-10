@@ -9,9 +9,6 @@ import org.jetbrains.annotations.Nullable;
 import java.util.Random;
 
 public class EtherealSaplingGenerator extends SaplingGenerator {
-    public EtherealSaplingGenerator() {
-    }
-
     @Nullable
     @Override
     protected Holder<? extends ConfiguredFeature<?, ?>> getTreeFeature(Random random, boolean bees) {

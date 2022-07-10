@@ -12,9 +12,10 @@ import static net.alexandra.malechia.world.feature.ModOreFeatures.rareOrePlaceme
 public class ModPlacedFeatures {
     public static final Holder<PlacedFeature> ALLIAN_ORE_PLACED;
     public static final Holder<PlacedFeature> LITRIUM_ORE_PLACED;
-    public static final Holder<PlacedFeature> ALOTIC_ORE_PLACED = PlacedFeatureUtil.register("alotic_ore_placed",
-            ModConfiguredFeatures.ALOTIC_ORE, commonOrePlacementModifiers(6,
-                    HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-64), YOffset.aboveBottom(80))));
+    public static final Holder<PlacedFeature> ALOTIC_ORE_PLACED = PlacedFeatureUtil.register(
+			"alotic_ore_placed",
+            ModConfiguredFeatures.ALOTIC_ORE,
+			commonOrePlacementModifiers(6, HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-64), YOffset.aboveBottom(80))));
     public static final Holder<PlacedFeature> HALORIUM_ORE_PLACED = PlacedFeatureUtil.register("halorium_ore_placed",
             ModConfiguredFeatures.HALORIUM_ORE, commonOrePlacementModifiers(8,
                     HeightRangePlacementModifier.createUniform(YOffset.aboveBottom(-16), YOffset.aboveBottom(64))));

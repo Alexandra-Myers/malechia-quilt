@@ -5,10 +5,8 @@ import net.alexandra.malechia.effects.ModEffects;
 import net.alexandra.malechia.enchantments.ModEnchantments;
 import net.alexandra.malechia.item.ModItems;
 import net.alexandra.malechia.tag.MalechiaBlockTags;
-import net.alexandra.malechia.util.ModLootTableModifiers;
 import net.alexandra.malechia.util.ModRegistries;
 import net.alexandra.malechia.world.biome.MalechiaBuiltinBiomes;
-import net.alexandra.malechia.world.biome.MalechiaSurfaceRules;
 import net.alexandra.malechia.world.feature.ModConfiguredFeatures;
 import net.alexandra.malechia.world.feature.ModTreeConfiguredFeatures;
 import net.alexandra.malechia.world.gen.ModWorldGen;
@@ -19,9 +17,6 @@ import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import javax.swing.*;
-import java.awt.*;
 
 public class MalechiaMod implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
@@ -52,9 +47,7 @@ public class MalechiaMod implements ModInitializer {
 		MalechiaBlockTags.registerModBlockTags();
 		ModEnchantments.registerModEnchantments();
 		ModEffects.registerModEffects();
-		ModLootTableModifiers.modifyLootTables();
 		ModRegistries.registerModStuffs();
 		MalechiaBuiltinBiomes.registerModBiomes();
-		MalechiaSurfaceRules.createDefaultRule();
 	}
 }

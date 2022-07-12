@@ -1,14 +1,10 @@
 package net.alexandra.malechia.item;
 
-import com.github.crimsondawn45.fabricshieldlib.lib.object.FabricShieldItem;
 import net.alexandra.malechia.MalechiaMod;
-import net.alexandra.malechia.item.custom.BOSS_ESSENCE;
-import net.alexandra.malechia.item.custom.EmpoweredStickItem;
-import net.alexandra.malechia.item.custom.MalechiaArmorItem;
-import net.alexandra.malechialib.item.AxeItem;
-import net.alexandra.malechialib.item.HoeItem;
-import net.alexandra.malechialib.item.PickaxeItem;
-import net.alexandra.malechialib.item.ShovelItem;
+import net.alexandra.malechia.item.custom.*;
+import net.alexandra.malechia.item.custom.AxeItem;
+import net.alexandra.malechia.item.custom.HoeItem;
+import net.alexandra.malechia.item.custom.PickaxeItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
@@ -18,8 +14,8 @@ import net.minecraft.util.registry.Registry;
 
 public class ModItems {
 
-    public static final Item NETHERITE_SHIELD = registerItem("netherite_shield",
-            new FabricShieldItem(new FabricItemSettings().maxDamage(2500).group(ItemGroup.COMBAT).fireproof(), 10, 13, ModItems.NETHERITE_NUGGET));
+//    public static final Item NETHERITE_SHIELD = registerItem("netherite_shield",
+//            new FabricShieldItem(new FabricItemSettings().maxDamage(2500).group(ItemGroup.COMBAT).fireproof(), 10, 13, ModItems.NETHERITE_NUGGET));
     public static final Item BOSS_ESSENCE = registerItem("boss_essence",
             new BOSS_ESSENCE(new FabricItemSettings().rarity(Rarity.EPIC).food(MalechiaFoodComponents.BOSS_ESSENCE).maxCount(1).group(ModItemGroups.MALECHIA_BREWING)));
     public static final Item QUARITE = registerItem("quarite",
@@ -65,7 +61,7 @@ public class ModItems {
     public static final ToolItem BOSS_ESSENCE_IRON_PICKAXE = registerToolItem("boss_essence_iron_pickaxe",
             new PickaxeItem(MalechiaToolMaterials.BOSS, 2, -2.3F, new Item.Settings().rarity(Rarity.UNCOMMON).fireproof().group(ModItemGroups.MALECHIA_TOOLS)));
     public static final ToolItem BOSS_ESSENCE_IRON_AXE = registerToolItem("boss_essence_iron_axe",
-            new AxeItem(4, -3.0F,MalechiaToolMaterials.BOSS,  new Item.Settings().rarity(Rarity.UNCOMMON).fireproof().group(ModItemGroups.MALECHIA_TOOLS)));
+            new AxeItem(MalechiaToolMaterials.BOSS,4, -3.0F,  new Item.Settings().rarity(Rarity.UNCOMMON).fireproof().group(ModItemGroups.MALECHIA_TOOLS)));
     public static final ToolItem BOSS_ESSENCE_IRON_HOE = registerToolItem("boss_essence_iron_hoe",
             new HoeItem(MalechiaToolMaterials.BOSS, 1, 0F, new Item.Settings().rarity(Rarity.UNCOMMON).fireproof().group(ModItemGroups.MALECHIA_TOOLS)));
     public static final Item BOSS_ESSENCE_NETHER_STAR = registerItem("boss_essence_nether_star",
@@ -85,7 +81,7 @@ public class ModItems {
     public static final ToolItem MALECHIA_PICKAXE = registerToolItem("malechia_pickaxe",
             new PickaxeItem(MalechiaToolMaterials.MALECHIA, 2, -2.3F, new Item.Settings().rarity(Rarity.RARE).fireproof().group(ModItemGroups.MALECHIA_TOOLS)));
     public static final ToolItem MALECHIA_AXE = registerToolItem("malechia_axe",
-            new AxeItem(4, -2.7F,MalechiaToolMaterials.MALECHIA,  new Item.Settings().rarity(Rarity.RARE).fireproof().group(ModItemGroups.MALECHIA_TOOLS)));
+            new AxeItem(MalechiaToolMaterials.MALECHIA, 4, -2.7F,  new Item.Settings().rarity(Rarity.RARE).fireproof().group(ModItemGroups.MALECHIA_TOOLS)));
     public static final ToolItem MALECHIA_HOE = registerToolItem("malechia_hoe",
             new HoeItem(MalechiaToolMaterials.MALECHIA, 1, 1F, new Item.Settings().rarity(Rarity.RARE).fireproof().group(ModItemGroups.MALECHIA_TOOLS)));
     public static final ArmorItem MALECHIA_HELMET = registerArmorItem("malechia_helmet",
@@ -98,10 +94,10 @@ public class ModItems {
             new ArmorItem(MalechiaArmorMaterials.MALECHIA, EquipmentSlot.FEET, new Item.Settings().rarity(Rarity.RARE).fireproof().group(ModItemGroups.MALECHIA_COMBAT)));
     public static final MalechiaBowItem MALECHIA_BOW = registerMalechiaBowItem("malechia_bow",
             new MalechiaBowItem(new FabricItemSettings().group(ModItemGroups.MALECHIA_COMBAT).rarity(Rarity.RARE).maxDamage(5000)));
-    public static final Item MALECHIA_SHIELD = registerItem("malechia_shield",
-            new FabricShieldItem(new FabricItemSettings().maxDamage(5000).group(ModItemGroups.MALECHIA_COMBAT).fireproof(), 5, 20, ModItems.UNIFIER));
+//    public static final Item MALECHIA_SHIELD = registerItem("malechia_shield",
+//            new FabricShieldItem(new FabricItemSettings().maxDamage(5000).group(ModItemGroups.MALECHIA_COMBAT).fireproof(), 5, 20, ModItems.UNIFIER));
     public static final Item EMPOWERED_STICK = registerItem("empowered_stick",
-            new EmpoweredStickItem(new FabricItemSettings().fireproof().rarity(Rarity.EPIC).group(ModItemGroups.MALECHIA_TOOLS)));
+            new DebugStickItem(new FabricItemSettings().fireproof().rarity(Rarity.EPIC).group(ModItemGroups.MALECHIA_TOOLS)));
     public static final ToolItem SPRUCE_SWORD = registerToolItem("spruce_sword",
             new SwordItem(ToolMaterials.WOOD, 3, -2.4F, new FabricItemSettings().group(ItemGroup.COMBAT)));
     public static final ToolItem BIRCH_SWORD = registerToolItem("birch_sword",
@@ -129,11 +125,11 @@ public class ModItems {
     public static final ToolItem JUNGLE_PICKAXE = registerToolItem("jungle_pickaxe",
             new PickaxeItem(ToolMaterials.WOOD, 1, -2.8F, (new Item.Settings()).group(ItemGroup.TOOLS)));
     public static final ToolItem SPRUCE_AXE = registerToolItem("spruce_axe",
-            new AxeItem( 6, 6.0F, ToolMaterials.WOOD, (new Item.Settings()).group(ItemGroup.TOOLS)));
+            new AxeItem( ToolMaterials.WOOD,6, 6.0F,  (new Item.Settings()).group(ItemGroup.TOOLS)));
     public static final ToolItem BIRCH_AXE = registerToolItem("birch_axe",
-            new AxeItem( 6, 6.0F, ToolMaterials.WOOD, (new Item.Settings()).group(ItemGroup.TOOLS)));
+            new AxeItem( ToolMaterials.WOOD,6, 6.0F,  (new Item.Settings()).group(ItemGroup.TOOLS)));
     public static final ToolItem JUNGLE_AXE = registerToolItem("jungle_axe",
-            new AxeItem( 6, 6.0F, ToolMaterials.WOOD, (new Item.Settings()).group(ItemGroup.TOOLS)));
+            new AxeItem( ToolMaterials.WOOD,6, 6.0F,  (new Item.Settings()).group(ItemGroup.TOOLS)));
     public static final ToolItem SPRUCE_HOE = registerToolItem("spruce_hoe",
             new HoeItem(ToolMaterials.WOOD, 0, -3.0F, (new Item.Settings()).group(ItemGroup.TOOLS)));
     public static final ToolItem BIRCH_HOE = registerToolItem("birch_hoe",
@@ -143,10 +139,6 @@ public class ModItems {
 //    public static final Item NO_CLIP_ITEM = registerItem("no_clip",
 //            new NO_CLIP_ITEM(toolMaterialBoss.INSTANCE, new Item.Settings().rarity(Rarity.EPIC).fireproof().group(ItemGroup.TOOLS)));
 
-
-    private static Item registerMinecraftItem(String name, Item item) {
-        return Registry.register(Registry.ITEM, new Identifier("minecraft", name), item);
-    }
     private static Item registerItem(String name, Item item) {
            return Registry.register(Registry.ITEM, new Identifier(MalechiaMod.MOD_ID, name), item);
     }

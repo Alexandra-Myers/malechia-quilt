@@ -3,6 +3,10 @@ plugins {
 	alias(libs.plugins.quilt.loom)
 }
 
+loom {
+	accessWidenerPath = file("src/main/resources/malechia.accesswidener")
+}
+
 archivesBaseName = project.archives_base_name
 version = project.version
 group = project.maven_group
@@ -40,14 +44,10 @@ dependencies {
 		//officialMojangMappings() // Uncomment if you want to use Mojang mappings as your primary mappings, falling back on QM for parameters and Javadocs
 	}
 	modImplementation libs.quilt.loader
-	modImplementation(libs.malechia.lib) {
-		exclude group: 'net.fabricmc'
-		exclude group: 'net.fabricmc.fabric-api'
-	}
-	modImplementation(libs.fabric.shield.lib) {
-		exclude group: 'net.fabricmc'
-		exclude group: 'net.fabricmc.fabric-api'
-	}
+//	modImplementation ("com.github.Alexandra-Myers:Quilt-Shield-Lib:v1.6.1-1.19") {
+//		exclude group: 'net.fabricmc'
+//		exclude group: 'net.fabricmc.fabric-api'
+//	}
 	modImplementation(libs.customportalapi) {
 		exclude group: 'net.fabricmc'
 		exclude group: 'net.fabricmc.fabric-api'
@@ -60,9 +60,17 @@ dependencies {
 		exclude group: 'net.fabricmc'
 		exclude group: 'net.fabricmc.fabric-api'
 	}
-	modImplementation(libs.libblockattributes) {
+//	modImplementation(libs.libblockattributes) {
+//		exclude group: 'net.fabricmc'
+//		exclude group: 'net.fabricmc.fabric-api'
+//	}
+	modImplementation("com.github.Chocohead:Fabric-ASM:v${project.fabric_asm_version}") {
 		exclude group: 'net.fabricmc'
-		exclude group: 'net.fabricmc.fabric-api'
+		exclude group: "net.fabricmc.fabric-api"
+	}
+	include("com.github.Chocohead:Fabric-ASM:v${project.fabric_asm_version}") {
+		exclude group: 'net.fabricmc'
+		exclude group: "net.fabricmc.fabric-api"
 	}
 
 	// QSL is not a complete API; You will need Quilted Fabric API to fill in the gaps.

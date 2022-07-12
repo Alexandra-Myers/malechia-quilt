@@ -19,12 +19,13 @@
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
 			"init": "net.alexandra.malechia.MalechiaMod",
-			"client": "net.alexandra.malechia.MalechiaClient"
+			"client": "net.alexandra.malechia.MalechiaClient",
+			"terrablender": "net.alexandra.malechia.TerraBlenderInit"
 		},
 		"depends": [
 			{
 				"id": "quilt_loader",
-				"versions": ">=0.16.0-"
+				"versions": ">=0.17.0-"
 			},
 			{
 				"id": "quilted_fabric_api",
@@ -32,9 +33,10 @@
 			},
 			{
 				"id": "minecraft",
-				"versions": ">=1.18.2"
+				"versions": ">=1.19"
 			}
 		]
 	},
+	"accessWidener": "malechia.accesswidener",
 	"mixin": "malechia.mixins.json"
 }
